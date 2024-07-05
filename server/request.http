@@ -1,0 +1,72 @@
+
+### USER SIGNUP
+POST http://localhost:5000/user/signup
+Content-Type: application/json
+
+{
+    "name": "John",
+    "email": "john@gmail.com",
+    "password": "123456"
+}
+
+
+
+### USER SIGNIN
+POST http://localhost:5000/user/signin
+Content-Type: application/json
+
+{
+    "email": "a@a.com",
+    "password": "123456"
+}
+
+
+
+### USER VIEW
+GET http://localhost:5000/user/view
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY2ODZmYmFjMzIxYWYwMTljZTRkYjM3YSIsImVtYWlsIjoiam9obkBnbWFpbC5jb20ifSwiaWF0IjoxNzIwMTU4Mjc3LCJleHAiOjE3NTE2OTQyNzd9.mLCDWlVq5FqCl5YZT9e-PebuIO8rAPfRhTmeUplEVmE
+
+
+
+
+### PRODUCT CREATE
+POST http://localhost:5000/product/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY2ODgzNjM0NzFjNmMwMjI5Zjk2NGM2MyIsImVtYWlsIjoiYUBhLmNvbSJ9LCJpYXQiOjE3MjAyMTAxNzMsImV4cCI6MTc1MTc0NjE3M30.nEEz6nBevCu7WRtAhhpfhZfD6QcJyU5mpjVSSN1kOmQ
+
+{
+    "title": "Pent",
+    "description": "<descriptoin>",
+    "price": 500
+}
+
+
+### PRODUCT UPDATE
+PATCH  http://localhost:5000/product/update/668788ca40f08013da06d150
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY2ODZmYmFjMzIxYWYwMTljZTRkYjM3YSIsImVtYWlsIjoiam9obkBnbWFpbC5jb20ifSwiaWF0IjoxNzIwMTU4Mjc3LCJleHAiOjE3NTE2OTQyNzd9.mLCDWlVq5FqCl5YZT9e-PebuIO8rAPfRhTmeUplEVmE
+
+{
+    "title": "Pent 2",
+    "description": "<descriptoin> 2",
+    "price": 500
+}
+
+
+### PRODUCT VIEW ALL
+GET  http://localhost:5000/product/view-all
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY2ODZmYmFjMzIxYWYwMTljZTRkYjM3YSIsImVtYWlsIjoiam9obkBnbWFpbC5jb20ifSwiaWF0IjoxNzIwMTU4Mjc3LCJleHAiOjE3NTE2OTQyNzd9.mLCDWlVq5FqCl5YZT9e-PebuIO8rAPfRhTmeUplEVmE
+
+
+### PRODUCT VIEW 
+GET  http://localhost:5000/product/view/668789acbb553f6cf69ea6f3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY2ODZmYmFjMzIxYWYwMTljZTRkYjM3YSIsImVtYWlsIjoiam9obkBnbWFpbC5jb20ifSwiaWF0IjoxNzIwMTU4Mjc3LCJleHAiOjE3NTE2OTQyNzd9.mLCDWlVq5FqCl5YZT9e-PebuIO8rAPfRhTmeUplEVmE
+
+
+### PRODUCT DELETE 
+DELETE   http://localhost:5000/product/delete/668789acbb553f6cf69ea6f3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY2ODZmYmFjMzIxYWYwMTljZTRkYjM3YSIsImVtYWlsIjoiam9obkBnbWFpbC5jb20ifSwiaWF0IjoxNzIwMTU4Mjc3LCJleHAiOjE3NTE2OTQyNzd9.mLCDWlVq5FqCl5YZT9e-PebuIO8rAPfRhTmeUplEVmE
